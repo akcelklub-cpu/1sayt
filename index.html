@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>УралБелЭнерго — официальный дилер завода ЧЗЭМ | Трубопроводная арматура высокого давления</title>
+  <meta name="description" content="УралБелЭнерго — официальный дилер завода ЧЗЭМ. Поставки задвижек, клапанов и охладителей пара для энергетики, нефтегаза, химии и металлургии. На рынке с 2000 года.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#14375E',
+            'primary-dark': '#0E2A47',
+            'primary-light': '#1F4E7A',
+            accent: '#FF7A00',
+            'bg-alt': '#F4F6F8',
+            ink: '#25303B',
+            muted: '#6B7280'
+          },
+          fontFamily: {
+            heading: ['Montserrat', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-body text-ink bg-white antialiased">
+
+  <!-- ============ HEADER ============ -->
+  <header id="site-header" class="sticky top-0 z-50 bg-white border-b border-gray-100 transition-shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+
+        <a href="#hero" class="flex items-center gap-3">
+          <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-primary text-white">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M12 12l4-4"/>
+              <path d="M12 7v1"/>
+              <path d="M12 16v1"/>
+              <path d="M7 12h1"/>
+              <path d="M16 12h1"/>
+            </svg>
+          </span>
+          <span class="leading-tight">
+            <span class="block font-heading text-lg font-bold text-primary">УралБелЭнерго</span>
+            <span class="block text-xs text-muted">Трубопроводная арматура</span>
+          </span>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-medium">
+          <a href="#about" class="hover:text-primary transition-colors">О компании</a>
+          <a href="#catalog" class="hover:text-primary transition-colors">Продукция</a>
+          <a href="#industries" class="hover:text-primary transition-colors">Отрасли</a>
+          <a href="#chzem" class="hover:text-primary transition-colors">ЧЗЭМ</a>
+          <a href="#survey" class="hover:text-primary transition-colors">Опросный лист</a>
+          <a href="#contacts" class="hover:text-primary transition-colors">Контакты</a>
+        </nav>
+
+        <div class="hidden lg:flex items-center gap-5">
+          <a href="tel:+79588837503" class="flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary-light transition-colors">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/>
+            </svg>
+            +7 958 883-75-03
+          </a>
+          <a href="#contact-form" class="inline-flex items-center rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white hover:bg-orange-600 transition-colors">
+            Оставить заявку
+          </a>
+        </div>
+
+        <button id="menu-btn" class="lg:hidden p-2 text-primary" aria-label="Меню">
+          <svg id="icon-open" class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="icon-close" class="h-7 w-7 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M6 6l12 12M18 6L6 18"/>
+          </svg>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="hidden lg:hidden pb-5">
+        <nav class="flex flex-col gap-1 text-sm font-medium">
+          <a href="#about" class="py-2 border-b border-gray-100 hover:text-primary">О компании</a>
+          <a href="#catalog" class="py-2 border-b border-gray-100 hover:text-primary">Продукция</a>
+          <a href="#industries" class="py-2 border-b border-gray-100 hover:text-primary">Отрасли</a>
+          <a href="#chzem" class="py-2 border-b border-gray-100 hover:text-primary">ЧЗЭМ</a>
+          <a href="#survey" class="py-2 border-b border-gray-100 hover:text-primary">Опросный лист</a>
+          <a href="#contacts" class="py-2 border-b border-gray-100 hover:text-primary">Контакты</a>
+          <a href="tel:+79588837503" class="py-2 border-b border-gray-100 font-semibold text-primary">+7 958 883-75-03</a>
+          <a href="#contact-form" class="mt-3 inline-flex items-center justify-center rounded-lg bg-accent px-5 py-3 text-sm font-semibold text-white">
+            Оставить заявку
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id="hero" class="hero-pattern text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-xs font-semibold tracking-wide uppercase">
+            <svg class="h-4 w-4 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="5"/>
+              <path d="M8.5 12.5L7 21l5-2.5L17 21l-1.5-8.5"/>
+            </svg>
+            Официальный дилер завода ЧЗЭМ
+          </span>
+
+          <h1 class="mt-6 font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
+            Трубопроводная арматура высокого давления для энергетики, нефтегаза и металлургии
+          </h1>
+
+          <p class="mt-6 text-lg text-blue-100 max-w-xl">
+            Поставляем задвижки, клапаны и охладители пара производства АО «Энергомаш (Чехов) – ЧЗЭМ».
+            Условный проход 6–800 мм, рабочее давление до 40 МПа, температура до 650°C.
+            На рынке трубопроводной арматуры — с 2000 года.
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="#contact-form" class="inline-flex items-center rounded-lg bg-accent px-6 py-3.5 text-sm font-semibold text-white hover:bg-orange-600 transition-colors">
+              Запросить КП
+            </a>
+            <a href="#catalog" class="inline-flex items-center rounded-lg border border-white/30 px-6 py-3.5 text-sm font-semibold text-white hover:bg-white/10 transition-colors">
+              Смотреть каталог
+            </a>
+          </div>
+
+          <dl class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 border-t border-white/10 pt-8">
+            <div>
+              <dt class="font-heading text-2xl md:text-3xl font-extrabold text-accent">2000</dt>
+              <dd class="mt-1 text-xs text-blue-100">год основания компании</dd>
+            </div>
+            <div>
+              <dt class="font-heading text-2xl md:text-3xl font-extrabold text-accent">Ду 6–800</dt>
+              <dd class="mt-1 text-xs text-blue-100">диаметры, мм</dd>
+            </div>
+            <div>
+              <dt class="font-heading text-2xl md:text-3xl font-extrabold text-accent">Ру до 40</dt>
+              <dd class="mt-1 text-xs text-blue-100">давление, МПа</dd>
+            </div>
+            <div>
+              <dt class="font-heading text-2xl md:text-3xl font-extrabold text-accent">t до 650°C</dt>
+              <dd class="mt-1 text-xs text-blue-100">рабочая температура</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hidden lg:block">
+          <svg viewBox="0 0 400 320" class="w-full h-auto max-w-lg mx-auto" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="160" width="400" height="36" fill="#1F4E7A"/>
+            <rect x="55" y="148" width="14" height="60" fill="#0E2A47"/>
+            <rect x="331" y="148" width="14" height="60" fill="#0E2A47"/>
+            <rect x="150" y="105" width="100" height="150" rx="8" fill="#1F4E7A" stroke="#3D6E9C" stroke-width="2"/>
+            <rect x="190" y="48" width="20" height="57" fill="#0E2A47"/>
+            <circle cx="200" cy="38" r="34" fill="none" stroke="#FF7A00" stroke-width="6"/>
+            <line x1="200" y1="4" x2="200" y2="72" stroke="#FF7A00" stroke-width="6"/>
+            <line x1="166" y1="38" x2="234" y2="38" stroke="#FF7A00" stroke-width="6"/>
+            <circle cx="62" cy="158" r="3" fill="#FF7A00"/>
+            <circle cx="62" cy="198" r="3" fill="#FF7A00"/>
+            <circle cx="338" cy="158" r="3" fill="#FF7A00"/>
+            <circle cx="338" cy="198" r="3" fill="#FF7A00"/>
+            <circle cx="170" cy="135" r="3" fill="#3D6E9C"/>
+            <circle cx="230" cy="135" r="3" fill="#3D6E9C"/>
+            <circle cx="170" cy="225" r="3" fill="#3D6E9C"/>
+            <circle cx="230" cy="225" r="3" fill="#3D6E9C"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ПРЕИМУЩЕСТВА ============ -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <span class="section-badge">Почему мы</span>
+        <h2 class="mt-3 font-heading text-3xl md:text-4xl font-extrabold text-primary">Преимущества работы с УралБелЭнерго</h2>
+      </div>
+
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="card-hover rounded-xl border border-gray-100 bg-white p-6 shadow-sm">
+          <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="5"/>
+              <path d="M8.5 12.5L7 21l5-2.5L17 21l-1.5-8.5"/>
+            </svg>
+          </div>
+          <h3 class="mt-4 font-heading text-lg font-bold">Официальный дилер ЧЗЭМ</h3>
+          <p class="mt-2 text-sm text-muted">Прямые поставки продукции от производителя — АО «Энергомаш (Чехов) – ЧЗЭМ» — без посредников.</p>
+        </div>
+
+        <div class="card-hover rounded-xl border border-gray-100 bg-white p-6 shadow-sm">
+          <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M12 7v5l3 2"/>
+            </svg>
+          </div>
+          <h3 class="mt-4 font-heading text-lg font-bold">На рынке с 2000 года</h3>
+          <p class="mt-2 text-sm text-muted">Многолетний опыт поставок трубопроводной арматуры для предприятий энергетики и промышленности.</p>
+        </div>
+
+        <div class="card-hover rounded-xl border border-gray-100 bg-white p-6 shadow-sm">
+          <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 21V10l5 3V10l5 3V10l5 3v8H3z"/>
+              <path d="M7 21v-4M12 21v-4M17 21v-4"/>
+            </svg>
+          </div>
+          <h3 class="mt-4 font-heading text-lg font-bold">Энергетика, нефтегаз, химия, металлургия</h3>
+          <p class="mt-2 text-sm text-muted">Поставки арматуры для ТЭС, АЭС, нефтегазовых, химических и металлургических предприятий.</p>
+        </div>
+
+        <div class="card-hover rounded-xl border border-gray-100 bg-white p-6 shadow-sm">
+          <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/>
+              <path d="M9 12l2 2 4-4"/>
+            </svg>
+          </div>
+          <h3 class="mt-4 font-heading text-lg font-bold">Сертифицированная продукция</h3>
+          <p class="mt-2 text-sm text-muted">Арматура соответствует требованиям ГОСТ и ТР ТС, действующим на объектах высокого давления.</p>
+        </div>
+
+        <div class="card-hover rounded-xl border border-gray-100 bg-white p-6 shadow-sm">
+          <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6h10M18 6h2M4 12h2M10 12h10M4 18h14M22 18h-4"/>
+              <circle cx="16" cy="6" r="2"/>
+              <circle cx="8" cy="12" r="2"/>
+              <circle cx="18" cy="18" r="2"/>
+            </svg>
+          </div>
+          <h3 class="mt-4 font-heading text-lg font-bold">Индивидуальный подбор</h3>
+          <p class="mt-2 text-sm text-muted">Поможем подобрать арматуру по параметрам: диаметр, давление, температура, рабочая среда.</p>
+        </div>
+
+        <div class="card-hover rounded-xl border border-gray-100 bg-white p-6 shadow-sm">
+          <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="8" cy="8" r="3"/>
+              <circle cx="17" cy="8" r="3"/>
+              <path d="M2 21v-1a5 5 0 0 1 5-5h2a5 5 0 0 1 4 2"/>
+              <path d="M13 17a5 5 0 0 1 4-2h1a5 5 0 0 1 5 5v1"/>
+            </svg>
+          </div>
+          <h3 class="mt-4 font-heading text-lg font-bold">Крупные промышленные заказчики</h3>
+          <p class="mt-2 text-sm text-muted">Среди партнёров — ПАО «Фортум», ПАО «Юнипро», АО «Уральская Сталь» и другие.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ О КОМПАНИИ ============ -->
+  <section id="about" class="bg-bg-alt py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="section-badge">О компании</span>
+          <h2 class="mt-3 font-heading text-3xl md:text-4xl font-extrabold text-primary">УралБелЭнерго</h2>
+          <p class="mt-6 text-base text-ink/80 leading-relaxed">
+            Компания «УралБелЭнерго» работает на рынке трубопроводной арматуры с 2000 года.
+            Мы специализируемся на поставках арматуры высокого давления для предприятий
+            энергетики, нефтегазовой, химической промышленности и металлургии.
+          </p>
+          <p class="mt-4 text-base text-ink/80 leading-relaxed">
+            Компания является официальным коммерческим представителем завода
+            АО «Энергомаш (Чехов) – ЧЗЭМ» — одного из крупнейших производителей
+            трубопроводной арматуры высокого давления в России.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4">
+          <div class="rounded-xl bg-white border border-gray-100 p-6 text-center shadow-sm">
+            <div class="font-heading text-3xl font-extrabold text-primary">2000</div>
+            <div class="mt-2 text-xs text-muted">год основания</div>
+          </div>
+          <div class="rounded-xl bg-white border border-gray-100 p-6 text-center shadow-sm">
+            <div class="font-heading text-3xl font-extrabold text-primary">25+</div>
+            <div class="mt-2 text-xs text-muted">лет на рынке</div>
+          </div>
+          <div class="rounded-xl bg-white border border-gray-100 p-6 text-center shadow-sm">
+            <div class="font-heading text-3xl font-extrabold text-primary">12+</div>
+            <div class="mt-2 text-xs text-muted">видов арматуры в наличии</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ О ЗАВОДЕ ЧЗЭМ ============ -->
+  <section id="chzem" class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-3 gap-12 items-start">
+        <div class="lg:col-span-2">
+          <span class="section-badge">Завод-партнёр</span>
+          <h2 class="mt-3 font-heading text-3xl md:text-4xl font-extrabold text-primary">
+            Официальный дилер завода ЧЗЭМ
+          </h2>
+          <p class="mt-6 text-base text-ink/80 leading-relaxed">
+            АО «Энергомаш (Чехов) – ЧЗЭМ» — один из крупнейших производителей трубопроводной
+            арматуры высокого давления в России. Завод разрабатывает и производит арматуру
+            на рабочие среды «пар-вода» для энергетики (в том числе атомной), нефтегазовой,
+            химической и других отраслей промышленности.
+          </p>
+          <ul class="mt-6 space-y-3">
+            <li class="flex items-start gap-3 text-sm">
+              <svg class="h-5 w-5 shrink-0 text-accent mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>Условный проход — от 6 до 800 мм</span>
+            </li>
+            <li class="flex items-start gap-3 text-sm">
+              <svg class="h-5 w-5 shrink-0 text-accent mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>Рабочее давление — до 40 МПа</span>
+            </li>
+            <li class="flex items-start gap-3 text-sm">
+              <svg class="h-5 w-5 shrink-0 text-accent mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>Рабочая температура — до 650°C</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="rounded-2xl bg-primary text-white p-8">
+          <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white/10">
+            <svg class="h-6 w-6 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="5"/>
+              <path d="M8.5 12.5L7 21l5-2.5L17 21l-1.5-8.5"/>
+            </svg>
+          </div>
+          <h3 class="mt-5 font-heading text-xl font-bold">Сертифицированный дилер</h3>
+          <p class="mt-3 text-sm text-blue-100 leading-relaxed">
+            Поставляем оригинальную продукцию завода ЧЗЭМ с полным комплектом сопроводительной
+            документации и сертификатов соответствия, действующих на территории РФ.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ КАТАЛОГ ПРОДУКЦИИ ============ -->
+  <section id="catalog" class="bg-bg-alt py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <span class="section-badge">Продукция</span>
+        <h2 class="mt-3 font-heading text-3xl md:text-4xl font-extrabold text-primary">Каталог продукции ЧЗЭМ</h2>
+        <p class="mt-4 text-base text-ink/80">Поставляем полный спектр трубопроводной арматуры производства завода ЧЗЭМ.</p>
+      </div>
+
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+        <!-- 1 Задвижки -->
+        <div class="card-hover rounded-xl border border-gray-100 bg-white p-6 shadow-sm flex flex-col">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+            <svg class="h-7 w-7" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="24" r="18"/>
+              <line x1="24" y1="8" x2="24" y2="40"/>
+              <line x1="16" y1="14" x2="32" y2="14"/>
+            </svg>
+          </div>
+          <h3 class="mt-4 font-heading text-base font-bold">Задвижки 1511-80-МБ и др.</h3>
+          <p class="mt-2 text-sm text-muted flex-1">Запорная арматура для перекрытия потока рабочей среды на трубопроводах высокого давления.</p>
+          <a href="#contact-form" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-accent transition-colors">
+            Запросить цену
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <!-- 2 Клапаны сильфонные -->
+        <div class="card-hover rounded-xl border border-gray-100 bg-white p-6 shadow-sm flex flex-col">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+            <svg class="h-7 w-7" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="24" r="18"/>
+              <path d="M24 14v8l7 4"/>
+              <circle cx="24" cy="24" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="mt-4 font-heading text-base font-bold">Клапаны сильфонные 1541-80-Э и др.</h3>
+          <p class="mt-2 text-sm text-muted flex-1">Запорные клапаны с сильфонным уплотнением — повышенная герметичность и ресурс.</p>
+          <a href="#contact-form" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-accent transition-colors">
+            Запросить цену
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <!-- 3 Клапаны запорные -->
+        <div class="card-hover rounded-xl border border-gray-100 bg-white p-6 shadow-sm flex flex-col">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+            <svg class="h-7 w-7" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="24" r="18"/>
+              <path d="M24 14v8l7 4"/>
+              <circle cx="24" cy="24" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="mt-4 font-heading text-base font-bold">Клапаны запорные 1213-6-0 и др.</h3>
+          <p class="mt-2 text-sm text-muted flex-1">Запорная арматура общего назначения для трубопроводов «пар-вода».</p>
+          <a href="#contact-form" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-accent transition-colors">
+            Запросить цену
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <!-- 4 Клапаны обратные -->
+        <div class="card-hover rounded-xl border border-gray-100 bg-white p-6 shadow-sm flex flex-col">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+            <svg class="h-7 w-7" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="24" r="18"/>
+              <path d="M16 24h12m0 0l-4-4m4 4l-4 4"/>
+            </svg>
+          </div>
+          <h3 class="mt-4 font-heading text-base font-bold">Клапаны обратные 720-20-0А и др.</h3>
+          <p class="mt-2 text-sm text-muted flex-1">Предотвращают обратный ток рабочей среды в трубопроводе.</p>
+          <a href="#contact-form" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-accent transition-colors">
+            Запросить цену
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <!-- 5 Клапаны запорно-дроссельные -->
+        <div class="card-hover rounded-xl border border-gray-100 bg-white p-6 shadow-sm flex flex-col">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+            <svg class="h-7 w-7" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="24" r="18"/>
+              <path d="M24 14v8l7 4"/>
+              <circle cx="24" cy="24" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="mt-4 font-heading text-base font-bold">Клапаны запорно-дроссельные 950-150/250-Э и др.</h3>
+          <p class="mt-2 text-sm text-muted flex-1">Совмещают функции запорной арматуры и регулирования расхода.</p>
+          <a href="#contact-form" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-accent transition-colors">
+            Запросить цену
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <!-- 6 Клапаны главные предохранительные -->
+        <div class="card-hover rounded-xl border border-gray-100 bg-white p-6 shadow-sm flex flex-col">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+            <svg class="h-7 w-7" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="24" r="18"/>
+              <path d="M24 32V16m0 0l-5 5m5-5l5 5"/>
+            </svg>
+          </div>
+          <h3 class="mt-4 font-heading text-base font-bold">Клапаны главные предохранительные 1203-125/175-0 и др.</h3>
+          <p class="mt-2 text-sm text-muted flex-1">Защита оборудования от превышения давления — главные ИПУ котлов и трубопроводов.</p>
+          <a href="#contact-form" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-accent transition-colors">
+            Запросить цену
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <!-- 7 Клапаны импульсные -->
+        <div class="card-hover rounded-xl border border-gray-100 bg-white p-6 shadow-sm flex flex-col">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+            <svg class="h-7 w-7" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="24" r="18"/>
+              <path d="M24 32V16m0 0l-5 5m5-5l5 5"/>
+            </svg>
+          </div>
+          <h3 class="mt-4 font-heading text-base font-bold">Клапаны импульсные 586-20-ЭМ-01 и др.</h3>
+          <p class="mt-2 text-sm text-muted flex-1">Управляющие клапаны для импульсно-предохранительных устройств (ИПУ).</p>
+          <a href="#contact-form" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-accent transition-colors">
+            Запросить цену
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <!-- 8 Клапаны предохранительные DN 400/600 -->
+        <div class="card-hover rounded-xl border border-gray-100 bg-white p-6 shadow-sm flex flex-col">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+            <svg class="h-7 w-7" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="24" r="18"/>
+              <path d="M24 32V16m0 0l-5 5m5-5l5 5"/>
+            </svg>
+          </div>
+          <h3 class="mt-4 font-heading text-base font-bold">Клапаны предохранительные DN 400/600 788-400/600-0 и др.</h3>
+          <p class="mt-2 text-sm text-muted flex-1">Предохранительная арматура крупного диаметра для энергетического оборудования.</p>
+          <a href="#contact-form" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-accent transition-colors">
+            Запросить цену
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <!-- 9 Клапаны предохранительные DN 20/80 -->
+        <div class="card-hover rounded-xl border border-gray-100 bg-white p-6 shadow-sm flex flex-col">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+            <svg class="h-7 w-7" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="24" r="18"/>
+              <path d="M24 32V16m0 0l-5 5m5-5l5 5"/>
+            </svg>
+          </div>
+          <h3 class="mt-4 font-heading text-base font-bold">Клапаны предохранительные DN 20/80 1392-20/80-0 и др.</h3>
+          <p class="mt-2 text-sm text-muted flex-1">Предохранительная арматура малого и среднего диаметра.</p>
+          <a href="#contact-form" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-accent transition-colors">
+            Запросить цену
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <!-- 10 Клапаны регулирующие -->
+        <div class="card-hover rounded-xl border border-gray-100 bg-white p-6 shadow-sm flex flex-col">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+            <svg class="h-7 w-7" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="24" r="18"/>
+              <path d="M24 14v8l7 4"/>
+              <circle cx="24" cy="24" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="mt-4 font-heading text-base font-bold">Клапаны регулирующие 584-10-0 и др.</h3>
+          <p class="mt-2 text-sm text-muted flex-1">Регулирование расхода и давления рабочей среды в технологических процессах.</p>
+          <a href="#contact-form" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-accent transition-colors">
+            Запросить цену
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <!-- 11 Клапаны дроссельные -->
+        <div class="card-hover rounded-xl border border-gray-100 bg-white p-6 shadow-sm flex flex-col">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+            <svg class="h-7 w-7" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="24" r="18"/>
+              <path d="M24 14v8l7 4"/>
+              <circle cx="24" cy="24" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="mt-4 font-heading text-base font-bold">Клапаны дроссельные 993-100-ЭМ и др.</h3>
+          <p class="mt-2 text-sm text-muted flex-1">Снижение давления рабочей среды на участках трубопровода.</p>
+          <a href="#contact-form" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-accent transition-colors">
+            Запросить цену
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <!-- 12 Охладители пара -->
+        <div class="card-hover rounded-xl border border-gray-100 bg-white p-6 shadow-sm flex flex-col">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+            <svg class="h-7 w-7" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="24" r="18"/>
+              <path d="M14 20c2-3 4 3 6 0s4 3 6 0 4 3 6 0"/>
+              <path d="M14 28c2-3 4 3 6 0s4 3 6 0 4 3 6 0"/>
+            </svg>
+          </div>
+          <h3 class="mt-4 font-heading text-base font-bold">Охладители пара 827-175/175-ОП и др.</h3>
+          <p class="mt-2 text-sm text-muted flex-1">Охлаждение перегретого пара впрыском воды на ТЭС.</p>
+          <a href="#contact-form" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-accent transition-colors">
+            Запросить цену
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ОТРАСЛИ ============ -->
+  <section id="industries" class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <span class="section-badge">Применение</span>
+        <h2 class="mt-3 font-heading text-3xl md:text-4xl font-extrabold text-primary">Решения по отраслям</h2>
+      </div>
+
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <div class="card-hover rounded-xl border border-gray-100 bg-white p-6 shadow-sm">
+          <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 text-accent">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="2" fill="currentColor" stroke="none"/>
+              <ellipse cx="12" cy="12" rx="9" ry="4"/>
+              <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(60 12 12)"/>
+              <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(120 12 12)"/>
+            </svg>
+          </div>
+          <h3 class="mt-4 font-heading text-base font-bold">Энергетика и АЭС</h3>
+          <p class="mt-2 text-sm text-muted">Арматура для ТЭС и АЭС: задвижки, клапаны и охладители пара для энергоблоков и вспомогательных систем.</p>
+        </div>
+
+        <div class="card-hover rounded-xl border border-gray-100 bg-white p-6 shadow-sm">
+          <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 text-accent">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2C12 2 5 11 5 15a7 7 0 0 0 14 0c0-4-7-13-7-13z"/>
+            </svg>
+          </div>
+          <h3 class="mt-4 font-heading text-base font-bold">Нефтегазовая промышленность</h3>
+          <p class="mt-2 text-sm text-muted">Запорная и регулирующая арматура для трубопроводов добычи, транспортировки и переработки углеводородов.</p>
+        </div>
+
+        <div class="card-hover rounded-xl border border-gray-100 bg-white p-6 shadow-sm">
+          <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 text-accent">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 2v6L4 18a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3L15 8V2"/>
+              <path d="M9 2h6"/>
+              <path d="M7 16h10"/>
+            </svg>
+          </div>
+          <h3 class="mt-4 font-heading text-base font-bold">Химическая промышленность</h3>
+          <p class="mt-2 text-sm text-muted">Арматура для технологических трубопроводов с агрессивными и высокотемпературными средами.</p>
+        </div>
+
+        <div class="card-hover rounded-xl border border-gray-100 bg-white p-6 shadow-sm">
+          <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 text-accent">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="13" width="6" height="4" rx="0.5"/>
+              <rect x="9" y="9" width="6" height="4" rx="0.5"/>
+              <rect x="15" y="5" width="6" height="4" rx="0.5"/>
+              <line x1="3" y1="20" x2="21" y2="20"/>
+            </svg>
+          </div>
+          <h3 class="mt-4 font-heading text-base font-bold">Металлургия</h3>
+          <p class="mt-2 text-sm text-muted">Поставки арматуры для пароводяных систем металлургических комбинатов и ТЭЦ предприятий.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ОПРОСНЫЙ ЛИСТ ============ -->
+  <section id="survey" class="bg-bg-alt py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-3 gap-12">
+        <div class="lg:col-span-1">
+          <span class="section-badge">Подбор арматуры</span>
+          <h2 class="mt-3 font-heading text-3xl md:text-4xl font-extrabold text-primary">Опросный лист</h2>
+          <p class="mt-4 text-base text-ink/80 leading-relaxed">
+            Укажите технические параметры — мы подберём подходящие позиции из каталога ЧЗЭМ
+            и подготовим коммерческое предложение.
+          </p>
+        </div>
+
+        <form id="survey-form" class="lg:col-span-2 rounded-2xl bg-white border border-gray-100 shadow-sm p-6 md:p-8 grid sm:grid-cols-2 gap-5">
+          <div>
+            <label for="survey-type" class="block text-sm font-semibold mb-1.5">Тип арматуры</label>
+            <select id="survey-type" name="type" class="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm">
+              <option>Задвижка</option>
+              <option>Клапан запорный</option>
+              <option>Клапан обратный</option>
+              <option>Клапан запорно-дроссельный</option>
+              <option>Клапан предохранительный</option>
+              <option>Клапан импульсный</option>
+              <option>Клапан регулирующий</option>
+              <option>Клапан дроссельный</option>
+              <option>Охладитель пара</option>
+              <option>Другое / не уверен</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="survey-medium" class="block text-sm font-semibold mb-1.5">Рабочая среда</label>
+            <select id="survey-medium" name="medium" class="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm">
+              <option>Пар</option>
+              <option>Вода</option>
+              <option>Газ</option>
+              <option>Нефтепродукты</option>
+              <option>Химически активная среда</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="survey-dn" class="block text-sm font-semibold mb-1.5">Условный проход Ду, мм</label>
+            <input id="survey-dn" name="dn" type="number" min="6" max="800" placeholder="например, 200" class="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm">
+          </div>
+
+          <div>
+            <label for="survey-pn" class="block text-sm font-semibold mb-1.5">Рабочее давление Ру, МПа</label>
+            <input id="survey-pn" name="pn" type="number" min="0" max="40" step="0.1" placeholder="например, 16" class="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm">
+          </div>
+
+          <div class="sm:col-span-2">
+            <label for="survey-temp" class="block text-sm font-semibold mb-1.5">Рабочая температура, °C</label>
+            <input id="survey-temp" name="temp" type="number" min="0" max="650" placeholder="например, 350" class="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm">
+          </div>
+
+          <div class="sm:col-span-2">
+            <label for="survey-comment" class="block text-sm font-semibold mb-1.5">Комментарий</label>
+            <textarea id="survey-comment" name="comment" rows="3" placeholder="Дополнительные требования к арматуре" class="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm"></textarea>
+          </div>
+
+          <div class="sm:col-span-2">
+            <button type="submit" class="inline-flex items-center rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-white hover:bg-primary-light transition-colors">
+              Сформировать запрос
+            </button>
+            <p class="mt-2 text-xs text-muted">Параметры будут перенесены в форму заявки ниже.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ КЛИЕНТЫ ============ -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <span class="section-badge">Доверие</span>
+        <h2 class="mt-3 font-heading text-3xl md:text-4xl font-extrabold text-primary">Нам доверяют</h2>
+      </div>
+
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        <div class="rounded-xl border border-gray-100 bg-bg-alt p-6 text-center">
+          <div class="font-heading text-sm font-bold text-primary">ПАО «Фортум»</div>
+        </div>
+        <div class="rounded-xl border border-gray-100 bg-bg-alt p-6 text-center">
+          <div class="font-heading text-sm font-bold text-primary">ПАО «Юнипро»</div>
+        </div>
+        <div class="rounded-xl border border-gray-100 bg-bg-alt p-6 text-center">
+          <div class="font-heading text-sm font-bold text-primary">АО «Интер РАО — Электрогенерация»</div>
+        </div>
+        <div class="rounded-xl border border-gray-100 bg-bg-alt p-6 text-center">
+          <div class="font-heading text-sm font-bold text-primary">АО «Уральская Сталь»</div>
+        </div>
+        <div class="rounded-xl border border-gray-100 bg-bg-alt p-6 text-center">
+          <div class="font-heading text-sm font-bold text-primary">ООО «ЕвразХолдинг»</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ЭТАПЫ РАБОТЫ ============ -->
+  <section class="bg-bg-alt py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <span class="section-badge">Как мы работаем</span>
+        <h2 class="mt-3 font-heading text-3xl md:text-4xl font-extrabold text-primary">Этапы работы</h2>
+      </div>
+
+      <div class="mt-14 relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-6">
+        <div class="hidden lg:block timeline-line"></div>
+
+        <div class="relative z-10 flex flex-col items-center text-center">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white font-heading font-bold">1</div>
+          <h3 class="mt-4 font-heading text-base font-bold">Заявка</h3>
+          <p class="mt-2 text-sm text-muted">Оставляете заявку или опросный лист с параметрами арматуры.</p>
+        </div>
+
+        <div class="relative z-10 flex flex-col items-center text-center">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white font-heading font-bold">2</div>
+          <h3 class="mt-4 font-heading text-base font-bold">Подбор и расчёт</h3>
+          <p class="mt-2 text-sm text-muted">Подбираем подходящие позиции из каталога ЧЗЭМ и рассчитываем стоимость.</p>
+        </div>
+
+        <div class="relative z-10 flex flex-col items-center text-center">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white font-heading font-bold">3</div>
+          <h3 class="mt-4 font-heading text-base font-bold">Коммерческое предложение</h3>
+          <p class="mt-2 text-sm text-muted">Направляем КП с характеристиками, сроками и условиями поставки.</p>
+        </div>
+
+        <div class="relative z-10 flex flex-col items-center text-center">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white font-heading font-bold">4</div>
+          <h3 class="mt-4 font-heading text-base font-bold">Договор и поставка</h3>
+          <p class="mt-2 text-sm text-muted">Заключаем договор и организуем поставку на объект.</p>
+        </div>
+
+        <div class="relative z-10 flex flex-col items-center text-center">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white font-heading font-bold">5</div>
+          <h3 class="mt-4 font-heading text-base font-bold">Сервисная поддержка</h3>
+          <p class="mt-2 text-sm text-muted">Консультируем по эксплуатации и помогаем с последующими заказами.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ФОРМА ЗАЯВКИ ============ -->
+  <section id="contact-form" class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-3 gap-12">
+        <div class="lg:col-span-1">
+          <span class="section-badge">Запрос КП</span>
+          <h2 class="mt-3 font-heading text-3xl md:text-4xl font-extrabold text-primary">Запросить коммерческое предложение</h2>
+          <p class="mt-4 text-base text-ink/80 leading-relaxed">
+            Оставьте заявку — наш специалист свяжется с вами для уточнения деталей.
+            Также вы можете связаться с нами напрямую:
+          </p>
+
+          <div class="mt-6 space-y-3 text-sm">
+            <a href="tel:+79588837503" class="flex items-center gap-3 font-semibold text-primary hover:text-primary-light">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+              +7 958 883-75-03
+            </a>
+            <a href="mailto:uralbelenergo@mail.ru" class="flex items-center gap-3 font-semibold text-primary hover:text-primary-light">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+              uralbelenergo@mail.ru
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-2">
+          <form id="request-form" class="rounded-2xl bg-bg-alt border border-gray-100 p-6 md:p-8 grid sm:grid-cols-2 gap-5">
+            <div>
+              <label for="name" class="block text-sm font-semibold mb-1.5">Имя *</label>
+              <input id="name" name="name" type="text" required class="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm bg-white">
+            </div>
+            <div>
+              <label for="company" class="block text-sm font-semibold mb-1.5">Компания</label>
+              <input id="company" name="company" type="text" class="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm bg-white">
+            </div>
+            <div>
+              <label for="phone" class="block text-sm font-semibold mb-1.5">Телефон *</label>
+              <input id="phone" name="phone" type="tel" required class="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm bg-white">
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-semibold mb-1.5">Email</label>
+              <input id="email" name="email" type="email" class="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm bg-white">
+            </div>
+            <div class="sm:col-span-2">
+              <label for="task-description" class="block text-sm font-semibold mb-1.5">Описание задачи / параметры арматуры</label>
+              <textarea id="task-description" name="task" rows="5" class="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm bg-white"></textarea>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="file" class="block text-sm font-semibold mb-1.5">Прикрепить файл (чертёж, спецификация)</label>
+              <div class="flex items-center gap-3 rounded-lg border border-dashed border-gray-300 bg-white px-4 py-3">
+                <svg class="h-5 w-5 text-muted shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.5l-8.5 8.5a4 4 0 0 1-5.66-5.66l9.2-9.2a2.5 2.5 0 0 1 3.54 3.54l-9.2 9.2a1 1 0 0 1-1.42-1.42l8.49-8.49"/></svg>
+                <input id="file" name="file" type="file" class="w-full text-sm">
+              </div>
+            </div>
+            <div class="sm:col-span-2 flex items-start gap-2">
+              <input id="consent" name="consent" type="checkbox" required class="mt-1">
+              <label for="consent" class="text-xs text-muted">Согласен на обработку персональных данных в соответствии с политикой конфиденциальности.</label>
+            </div>
+            <div class="sm:col-span-2">
+              <button type="submit" class="inline-flex items-center rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-white hover:bg-orange-600 transition-colors">
+                Отправить заявку
+              </button>
+            </div>
+            <div id="form-success" class="sm:col-span-2 hidden rounded-lg bg-green-50 border border-green-200 px-4 py-3 text-sm text-green-700">
+              Спасибо! Заявка принята. Мы свяжемся с вами в ближайшее время.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ КОНТАКТЫ ============ -->
+  <section id="contacts" class="bg-bg-alt py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <span class="section-badge">Контакты</span>
+        <h2 class="mt-3 font-heading text-3xl md:text-4xl font-extrabold text-primary">Как с нами связаться</h2>
+      </div>
+
+      <div class="mt-12 grid lg:grid-cols-2 gap-6">
+        <div class="rounded-2xl bg-white border border-gray-100 shadow-sm p-6 md:p-8 space-y-5">
+          <div class="flex items-start gap-4">
+            <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.5 7-11a7 7 0 0 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            </div>
+            <div>
+              <div class="text-sm font-semibold">Адрес</div>
+              <div class="mt-1 text-sm text-muted">г. Екатеринбург, ул. Смоленская, 14</div>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+            </div>
+            <div>
+              <div class="text-sm font-semibold">Телефоны</div>
+              <div class="mt-1 text-sm text-muted">
+                <a href="tel:+79588837503" class="hover:text-primary">+7 958 883-75-03</a><br>
+                <a href="tel:+79588837504" class="hover:text-primary">+7 958 883-75-04</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            </div>
+            <div>
+              <div class="text-sm font-semibold">Email</div>
+              <div class="mt-1 text-sm text-muted">
+                <a href="mailto:uralbelenergo@mail.ru" class="hover:text-primary">uralbelenergo@mail.ru</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </div>
+            <div>
+              <div class="text-sm font-semibold">Режим работы</div>
+              <div class="mt-1 text-sm text-muted">Пн–Пт: 9:00–18:00 (МСК+2)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-2xl bg-white border border-gray-100 shadow-sm p-6 md:p-8 flex flex-col items-center justify-center text-center">
+          <div class="flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 text-primary">
+            <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.5 7-11a7 7 0 0 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          </div>
+          <h3 class="mt-4 font-heading text-lg font-bold">г. Екатеринбург, ул. Смоленская, 14</h3>
+          <p class="mt-2 text-sm text-muted">Точное расположение офиса можно посмотреть на карте.</p>
+          <a href="https://yandex.ru/maps/?text=Екатеринбург%2C+улица+Смоленская%2C+14" target="_blank" rel="noopener" class="mt-5 inline-flex items-center rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-white hover:bg-primary-light transition-colors">
+            Открыть на Яндекс.Картах
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-primary-dark text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid md:grid-cols-3 gap-10">
+        <div>
+          <div class="flex items-center gap-3">
+            <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-white/10 text-accent">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 12l4-4"/><path d="M12 7v1"/><path d="M12 16v1"/><path d="M7 12h1"/><path d="M16 12h1"/></svg>
+            </span>
+            <span class="font-heading text-lg font-bold">УралБелЭнерго</span>
+          </div>
+          <p class="mt-4 text-sm text-blue-100/80 max-w-xs">
+            Официальный дилер завода ЧЗЭМ. Трубопроводная арматура высокого давления для энергетики, нефтегаза, химии и металлургии.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-heading text-sm font-bold uppercase tracking-wide text-blue-100">Навигация</h4>
+          <nav class="mt-4 flex flex-col gap-2 text-sm text-blue-100/80">
+            <a href="#about" class="hover:text-white">О компании</a>
+            <a href="#catalog" class="hover:text-white">Продукция</a>
+            <a href="#industries" class="hover:text-white">Отрасли</a>
+            <a href="#chzem" class="hover:text-white">ЧЗЭМ</a>
+            <a href="#survey" class="hover:text-white">Опросный лист</a>
+            <a href="#contacts" class="hover:text-white">Контакты</a>
+          </nav>
+        </div>
+
+        <div>
+          <h4 class="font-heading text-sm font-bold uppercase tracking-wide text-blue-100">Контакты</h4>
+          <div class="mt-4 flex flex-col gap-2 text-sm text-blue-100/80">
+            <span>г. Екатеринбург, ул. Смоленская, 14</span>
+            <a href="tel:+79588837503" class="hover:text-white">+7 958 883-75-03</a>
+            <a href="mailto:uralbelenergo@mail.ru" class="hover:text-white">uralbelenergo@mail.ru</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-blue-100/70">
+        <span>© 2026 УралБелЭнерго. Все права защищены.</span>
+        <a href="#" class="hover:text-white">Политика обработки персональных данных</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

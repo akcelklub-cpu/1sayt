@@ -1,0 +1,68 @@
+:root {
+  --color-primary: #14375E;
+  --color-primary-dark: #0E2A47;
+  --color-primary-light: #1F4E7A;
+  --color-accent: #FF7A00;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #25303B;
+}
+
+.font-heading {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Hero background pattern */
+.hero-pattern {
+  background-color: var(--color-primary);
+  background-image:
+    radial-gradient(circle at 85% 20%, rgba(255, 255, 255, 0.07) 0, transparent 45%),
+    repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.035) 0 2px, transparent 2px 42px);
+}
+
+/* Card hover lift */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -12px rgba(20, 55, 94, 0.18);
+  border-color: var(--color-primary-light);
+}
+
+/* Section eyebrow label */
+.section-badge {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+/* Form focus state */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(20, 55, 94, 0.12);
+}
+
+/* Timeline connector (desktop) */
+.timeline-line {
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #E2E8F0;
+  z-index: 0;
+}
